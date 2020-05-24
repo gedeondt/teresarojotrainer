@@ -1,0 +1,73 @@
+.chooseus_area{
+    display: block;
+    overflow: hidden;
+    .chooseus_row{
+        .choose_img{
+            max-width: 845px;
+            flex: 0 0 44%;
+            padding: 0;
+            background: url("../images/choose_bg.jpg") no-repeat;
+            position: relative;
+            background-size: cover;
+            z-index: 1;
+            &:after{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: block;
+                background: rgba(34, 34, 34, 0.30);
+                z-index: -1;    
+            }
+            h2{
+                font: 600 30px/60px $pop;
+                color: #fff;
+                background: $bc;
+                padding: 0 30px 0 40px;
+                display: inline-block;
+                float: right;
+                margin-top: 80px;
+            }
+        }
+        .choose_content{
+            max-width: 1075px;  
+            flex: 0 0 56%;
+            background: #222222;
+            padding: 65px 90px;
+            .media{
+                max-width: 560px;
+                padding-top: 30px;
+                &:first-child{
+                    padding-top: 0;
+                }
+                &:last-child{
+                    padding-bottom: 5px;
+                }
+                i{
+                    margin-right: 20px;
+                    &:before{
+                        font-size: 50px;
+                        color: $bc;
+                    }
+                }
+                .media-body{
+                    padding-top: 12px;
+                    a{
+                        font: 500 22px/1 $pop;
+                        color: #fff;
+                        &:hover, &:focus{
+                            color: $bc;
+                        }
+                    }
+                    p{
+                        font: 400 16px/26px $lato;
+                        color: $pfont;
+                        padding-top: 8px;
+                    }
+                }
+            }
+        }
+    }
+}

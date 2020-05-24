@@ -1,0 +1,170 @@
+.footer_area{
+    background: #1d1d1d;
+    display: block;
+    overflow: hidden;
+    padding-top: 60px;
+    .footer_subscriber{
+        background: #181818;
+        border:1px solid rgb(62, 62, 62);
+        padding: 30px 40px;
+        .find_out_text{
+            h2{
+                font: 500 24px/43px $pop; 
+                color: rgba(255, 255, 255, 0.702);
+            }
+        }
+        .form-group{
+            padding-left: 28px !important;
+            margin: 0;
+            .form-control{
+                border: 1px solid rgb(48, 48, 48);
+                background-color: rgb(19, 19, 19);
+                font: 500 16px/43px $pop;
+                padding: 0 20px; 
+                border-radius: 0; 
+                color: rgba(255, 255, 255, 0.702);
+                box-shadow: none;
+                display: inline-block; 
+                max-width: 70%;
+                height: 48px;
+                @include placeholder{
+                    color: #3b3b3b;
+                }
+            }
+            .find_btn{
+                display: inline-block;
+                width: 165px; 
+                font: 500 16px/45px $pop;
+                color: #fff;
+                background: $bc;
+                border: 0;
+                margin-top: -2px;
+                margin-left: 35px;
+                &:hover{
+                    background: #7cac08;
+                }
+            }
+        }
+    }
+    .footer_row{
+        padding-top: 57px;
+        padding-bottom: 20px;
+        .fooer_logo{
+            padding-bottom: 30px;
+            p{
+                font: 400 16px/24px $lato;
+                color: #757575;
+                padding-top: 30px;
+                letter-spacing: .55px;
+            }
+            .social_icon{
+                padding-top: 28px;
+                li{
+                    display: inline-block;
+                    padding-right: 25px;
+                    a{
+                        font-size: 22px;
+                        color: #7c7c7c;
+                        &:hover, &:focus{
+                            color: $bc;
+                        }
+                    }
+                }
+            }
+        }
+        .quick{
+            padding-bottom: 30px;
+            h4{
+                font: 500 18px/1 $pop;
+                color: #fff;
+                position: relative; 
+                padding-bottom: 20px;
+                &:after{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    background: rgb(154, 195, 57);
+                    height: 2px;
+                    width: 40px;
+                } 
+            }
+            .quick_links{
+                padding-top: 17px;
+                li{
+                    list-style: none;
+                    a{
+                        font: 400 16px/32px $lato;
+                        color: #8d8d8d;
+                        letter-spacing: .40px;
+                        &:hover, &:focus{
+                            color: $bc;
+                        }
+                    }
+                } 
+            }
+        }
+        .quick_strat{
+            padding-left: 65px;
+        }
+        address{
+            padding-top: 28px;
+            margin: 0;
+            span{
+                font: 400 16px/24px $lato;
+                color: #757575;
+                padding-bottom: 5px;
+                i{
+                    font-size: 22px;
+                    padding-right: 20px;
+                    float: left;
+                    height: 45px;
+                    color: #757575;
+                }
+            }
+            a{
+                display: block;
+                font: 700 17px/30px $lato;
+                color: #787878;
+                padding-top: 7px;
+                i{
+                    font-size: 20px;
+                    padding-right: 20px; 
+                    color: #757575;
+                }
+                &:last-child{
+                    font: 400 16px $lato;
+                    i{
+                        font-size: 16px;
+                    }
+                } 
+                &:hover, &:focus{
+                    color: $bc;
+                    i{
+                        color: $bc;
+                    }
+                }
+            }
+        }
+    }
+    .copy_right{
+        background: #171717;
+        display: block;
+        overflow: hidden;
+        h6{
+            font: 400 16px/75px $lato;
+            color: #545454;
+            float: left;
+            &:last-child{
+                float: right;
+            }
+            a{
+                color: #545454;
+                font: 400 16px/75px $lato;
+                &:hover, &:focus{
+                    color: $bc;
+                }
+            }
+        }
+    }
+}     

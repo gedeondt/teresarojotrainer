@@ -1,0 +1,129 @@
+// Large devices (desktops, less than 1231px)
+@media (max-width: 1230px) {
+    .main_header_area .header_menu .navbar {
+        .navbar-brand{
+            width: 200px;
+            img{
+                max-width: 100%;
+            } 
+        }
+        #navbar_supported ul li a {
+            margin-right: 15px;
+        }
+    } 
+    section{
+        background-position: center !important;
+        background-size: cover !important;
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) {  
+    .main_header_area .header_menu .navbar { 
+        .container{
+            padding: 0 15px;
+        }
+        .navbar-brand{
+            width: auto;
+            padding: 10px 0;
+            img{
+                width: auto;
+            }
+        }
+        #navbar_supported{
+            background: #101010;
+            padding: 0px 15px; 
+            overflow-y: scroll; 
+            max-height:415px;
+            ul.navbar-nav{
+                li{
+                    a { 
+                        line-height: 45px;
+                        border-bottom: 1px solid #3e3e3e;
+                        margin-right: 0px;
+                        &:before{
+                            display: none;
+                        } 
+                    }
+                    &:last-child{
+                        a{
+                            border: 0px;
+                            padding-left: 0px;
+                        } 
+                    }
+                    &.dropdown{
+                        a{
+                            position: relative;
+                            margin-right: 0px;
+                            &:after{
+                                content: "\f107";
+                                position: absolute;
+                                right: 15px;
+                                top: 12px;
+                                font: normal normal normal 22px/1 FontAwesome;
+                                color: #fff;
+                                @include transition;
+                                display: block;
+                                border: 0px;
+                            }
+                        }
+                        .dropdown-menu{
+                            background-color: transparent;
+                            padding: 0 15px;
+                            border: 0px;
+                            li{
+                                a{
+                                    display: block;
+                                    padding: 0;
+                                    border-bottom: 1px solid #3e3e3e;
+                                    &:after{
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                        &.show{
+                            &:after{
+                                transform: rotate(180deg);
+                            }
+                        }
+                    } 
+                }
+                .search_dropdown{
+                    padding-left: 0; 
+                }
+            }   
+        } 
+        
+    } 
+}
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767px) {
+    .main_header_area .header_top{
+        .header_top_inner a{
+            font-size: 12px;
+            padding-right: 15px;
+        }
+    }
+}
+// Extra small devices (portrait phones, less than 576p
+@media (max-width: 575px) {
+    .main_header_area{
+        .header_top{
+            display: none;
+        }
+    }  
+    .center_tittle, .left_tittle{
+        padding-top: 50px;
+        h2{
+            font-size: 30px;
+            line-height: 32px;
+            &:after{
+                top: 21px;
+            }
+        }
+    } 
+    .health_coach_area, .services_area{
+        padding-bottom: 30px;
+    }
+}

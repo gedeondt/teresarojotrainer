@@ -1,0 +1,341 @@
+/* About Us Area css
+================================= */
+.about_us_area{
+    display: block;
+    overflow: hidden;
+    padding: 90px 0;
+    .aboutus_row{
+        .about_video{
+            padding-top: 12px;
+            .video_inner{
+                float: right;
+                min-width: 510px;
+                background: url("../images/about-video.jpg") no-repeat scroll center center;
+                background-size: cover;
+                transition: all 0.3s linear;
+                position: relative;
+                &:before{
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    background: rgba(0, 0, 0, 0.1);
+                    position: absolute;
+                    z-index: 0;
+                    transition: all 0.4s linear;
+                }
+                .popup-youtube{
+                    display: -webkit-flex;
+                    display: -moz-flex;
+                    display: -ms-flex;
+                    display: -o-flex;
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 135px;
+                    padding-bottom: 150px;
+                    img{
+                        transition: all 0.3s linear;
+                    }
+                }
+                &:hover{
+                    transform: scale(1.04);
+                    &:before{
+                        background: rgba(0, 0, 0, 0.5);
+                    }
+                    .popup-youtube{
+                        img{
+                            transform: scale(1.05);
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
+.about_content{
+    h2{ 
+        font: 600 32px $pop;
+        color: $heding;
+        display: inline-block;
+        position: relative;
+        &:after{
+            content: "";
+            position: absolute;
+            top: 31px;
+            right: -58px;
+            background: rgb(154, 195, 57);
+            height: 2px;
+            width: 40px;
+        }
+    }
+    p{
+        font: 400 17px/26px $lato;
+        color: $pfont;
+        padding-top: 22px;
+
+    }
+    a{
+        display: inline-block;
+        width: 265px;
+        line-height: 45px;
+        margin-top: 38px;
+        &:hover, &:focus{
+            background: #222222;
+            color: #fff;
+        }
+    }
+    img{
+        float: right;
+    }
+}
+p.bold{
+    font: 600 20px/30px $pop;
+    color: $heding;
+    padding-top: 11px;
+} 
+.about_us_area_3{
+    padding-top: 70px;
+}
+/* End About Us Area css
+================================= */
+
+/* About Us Pages css
+================================= */
+.best_fitness_area{
+    padding: 100px 0 80px; 
+    display: block;
+    overflow: hidden;
+    .best_fitness_row{
+        .fitness_img{ 
+            width: 300px;
+            height: 380px;
+            position: relative;
+            background: $bc;
+            img{
+                max-width: 100%;
+                position: absolute;
+                top: 20px;
+                left: 20px;
+            }
+            .fitness_shadow{
+                box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.19);
+            }
+        }
+        .fitness_content{
+            h1{
+                font: 600 32px/1 $pop;
+                color: $heding;
+            }
+            h2{
+                margin-top: -10px;
+            }
+            h3{
+                font: 600 17px/1 $pop;
+                color: $pfont;
+                display: inline-block;
+                position: relative;
+                letter-spacing: 0.20px;
+                padding-bottom: 20px;
+                &:after{
+                    content: "";
+                    position: absolute;
+                    top:12px;
+                    right: -60px;
+                    background: rgb(154, 195, 57);
+                    height: 2px;
+                    width: 40px;
+                }
+            }
+            .secent_p{ 
+                padding: 25px 0 30px;
+            }
+            .get_btn{
+                margin-bottom: 20px;
+                &:hover, &:focus{
+                    background: $pfont;
+                    color: #fff;
+                }
+            }
+            .fitness_list{
+                padding-top: 20px;
+                padding-left: 32px;
+                li{
+                    font: 400 17px/40px $lato;
+                    position: relative;
+                    color: $pfont;
+                    img{
+                        position: absolute;
+                        left: -32px;
+                        top: 12px;
+                    }
+                }
+            }
+        }
+        .misssion_content{
+            padding-top: 20px;
+            h2{
+                padding-bottom: 8px;
+            }
+            p{
+                line-height: 28px;
+                letter-spacing: -0.8px;
+                padding-bottom: 25px;
+            }
+        }
+        .misssion_img{
+            padding-top: 120px;
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+}
+.best_fitness_2{
+    padding-top: 0;
+    .best_fitness_row .misssion_content{
+        padding-top: 0;
+    }
+    .best_fitness_row .misssion_img{
+        padding-top: 100px;
+    }
+}
+
+.best_fitness_area_two{
+    background: #9ac339;
+    padding-bottom: 60px;
+    overflow: visible;
+    .best_fitness_row{
+        .fitness_img{
+            height: auto;
+            width: auto;
+            img{
+                left: 0;
+                top: 0;
+            }
+        }
+        .fitness_content{
+            p{
+                color: #fff;
+            }
+            h2{
+                font-size: 40px;
+                color: #fff;
+                &:after{
+                    background: #fff;
+                    top: 42px;
+                }
+            }
+            .fitness_list{
+                li{
+                    color: #fff;
+                }
+            }
+        } 
+    }
+}
+/* End About Us Pages css
+================================= */
+ 
+/* My Awards Area css
+================================= */
+.awards_area{
+    background: #101a00;
+    padding-bottom: 70px;
+    .left_tittle{
+        h2{
+            color: $bc;
+        }
+    }
+    .awards_inner{
+        padding-top: 35px;
+        .awards{
+            margin-bottom: 30px;
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+}
+/* End My Awards Area css
+================================= */ 
+
+/* Start about_us_area_4 css
+=================================*/
+.about_us_area_4{
+    background: #f0f0f0;
+    .health_counter_row{
+        padding-top: 70px;
+        .counter_col{
+            text-align: center;
+            .counter{
+                font: 900 60px $lato;
+                color: #9ac339;
+                position: relative;
+                display: inline-block;
+                margin-bottom: 15px;
+                padding-bottom: 10px;
+                &:before{
+                    width: 100%;
+                    content: "";
+                    height: 3px;
+                    background:#9ac339; 
+                    position: absolute;
+                    bottom: 0;
+                }
+            }
+            h4{
+                font: 400 18px/25px $lato;
+                color: #000;
+            }
+        }
+    }
+    
+}
+/* End about_us_area_4 css
+=================================*/
+
+/* Start about_me_area css
+=================================*/
+.about_me_area{
+    display: flex;
+    overflow: hidden;
+    .about_me_left{
+        width: calc(50% + 85px);
+        float: left;
+        display: flex;
+        background: #f0f0f0;
+        .about_content{
+            flex: 1;
+            align-self: center;
+            vertical-align: middle;
+            justify-content: center;
+            max-width: 670px;
+            margin-left: auto;
+            margin-right: 0px;
+            padding-right: 70px;
+        }
+    } 
+    .about_me_right{
+        width: calc(50% - 85px);
+        float: right;
+        position: relative;
+        z-index: 1;
+        &:before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: #000;
+            opacity: 0.30;
+            position: absolute;
+            z-index: 0;
+        }
+        img{
+            float: left;
+        }
+    }
+}
+/* End about_me_area css
+=================================*/

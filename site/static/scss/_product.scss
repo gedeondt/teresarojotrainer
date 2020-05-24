@@ -1,0 +1,363 @@
+/* Wheel Axel css
+================================= */
+.wheel_axel_area{
+    padding: 100px 0;
+    .wheel_axel_row{
+        .wheel_img{
+            img{
+                max-width: 100%;
+            }
+        }
+        .wheel_content{
+            h2{
+                font: 600 22px/1 $pop;
+                color: $heding;
+                padding-bottom: 27px;
+            }
+            p{
+                border-top: 1px solid #eaeaea;
+                border-bottom: 1px solid #eaeaea;
+                font: 400 17px/26px $lato;
+                color: $pfont;
+                padding: 25px 0;
+            }
+            h4{
+                font: 500 18px/1 $pop;
+                color: $heding;
+                padding: 28px 0;
+                b{
+                    font: 700 22px/1 $lato;
+                    padding-left: 5px;
+                }
+            }
+            h5{
+                font: 600 18px/1 $pop;
+                color: $heding;
+                margin-bottom: 45px;
+                input{
+                    border: 1px solid #eaeaea;
+                    padding: 0;
+                    text-align: center;
+                    font: 700 18px/33px $lato;
+                    width: 40px;
+                    color: $pfont;
+                    margin-left: 20px;
+                    box-shadow: none;
+                    outline: none;
+                }
+            }
+            .find_btn{
+                background: $bc;
+                border: 0;
+                color: #fff;
+                width: 185px;
+                &:hover, &:focus{
+                    background: $heding;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .wheel_tab{
+        margin-top: 80px; 
+        border-top: 0;
+        .nav-tabs{
+            border-color: rgb(226, 226, 226);
+            a{
+                font: 500 16px/45px $pop;
+                color: #fff;
+                background: $bc;
+                border-radius: 0;
+                padding: 0 25px;
+                min-width: 155px;
+                text-align: center;
+                margin-right: 10px;
+                &.active{
+                    color: $heding;
+                    background: #fff; 
+                    border-top: 2px solid $bc; 
+                }
+            }
+        }
+        .tab-content{
+            border: 1px solid rgb(226, 226, 226);
+            border-top: 0;
+            .tab-pane{ 
+                padding: 45px 40px;
+                p{
+                    font: 400 17px/26px $lato;
+                    color: $pfont; 
+                    padding-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+/* End Wheel Axel css
+================================= */
+
+/* Similar Products Area css
+================================= */
+.similar_products_area{
+    background: #f6f6f6;
+    padding-bottom: 70px;
+    .left_tittle{
+        padding-bottom: 38px;
+        text-align: left;
+    }
+    .similar_products{
+        .products{
+            text-align: center;
+            margin-bottom: 30px;
+            img{
+                max-width: 100%;
+                cursor: pointer;
+            }
+            .pdt{
+                font: 700 17px/26px $lato;
+                color: $heding;
+                display: block;
+                padding-top: 22px;
+                &:hover, &:focus{
+                    color: $bc;
+                }
+            }
+            h3{
+                font: 700 26px/1 $lato;
+                color: $bc;
+                padding: 12px 0 20px;
+            }
+            
+            .find_btn{
+                background: $bc;
+                border: 0;
+                color: #fff;
+                line-height: 40px;
+                font-size: 16px;
+                width: 150px;
+                &:hover, &:focus{
+                    background: $heding;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+.f_products_area{
+    background: #fff;
+    .similar_products{
+        margin-bottom: -50px;
+        .products{
+            margin-bottom: 80px;
+            .pdt{
+                font-size: 20px;
+            }
+            .find_btn{
+                background: transparent;
+                border: 2px solid #9ac339;
+                color: #9ac339;
+                &:hover{
+                    background: #9ac339;
+                    color: #fff;
+                }
+            }
+        } 
+    } 
+}
+/* End Similar Products Area css
+================================= */
+
+/* Checkout Table css
+================================= */
+.checkout_table{
+    padding: 100px 0; 
+    display: block;
+    overflow: hidden;
+    .checkout_row{
+        .table.table-bordered{
+            border-color: #ebebeb;
+            margin: 0;
+            margin: 0;
+            thead{
+                background: #f9f9f9;
+                tr{
+                    th{
+                        font: 600 18px/60px $pop;
+                        color: $heding;
+                        padding: 0 20px;
+                        border-bottom: 0;
+                        &:first-child{
+                            padding-left: 40px;
+                        }
+                        &.preview{
+                            width: 250px;
+                        }
+                        &.product{
+                            width: 215px;
+                        }
+                        &.price{
+                            width: 147px;
+                        }
+                        &.quantity{
+                            width: 230px;
+                        }
+                        &.total{
+                            width: 195px;
+                        }
+                        &.close{
+                            width: 133px;
+                        }
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    td{
+                        padding: 25px; 
+                        font: 400 17px/1 $lato;
+                        color: $pfont;
+                        vertical-align: middle;
+                        &:first-child{
+                            padding-left: 50px;
+                        }
+                        img{
+                            border: 1px solid #ebebeb;
+                        }
+                        &.total{
+                            font: 700 18px/1 $lato;
+                        }
+                        &.close_x{
+                            font-weight: 700;
+                            font-size: 18px;
+                            color: $heding;
+                            text-align: center;
+                            cursor: pointer; 
+                        }
+                        .product_select{
+                            border-radius: 0;
+                            border-color: #ebebeb;
+                            font: 400 17px/38px $lato;
+                            color: $pfont;
+                            height: auto;
+                            padding: 0 20px;
+                            width: 95px;
+                            &:after{
+                                display: none;
+                            }
+                            &:before{
+                                content: "\f0d7";
+                                font: normal normal normal 14px/38px FontAwesome;
+                                position: absolute;
+                                top: 0px;
+                                color: $pfont;
+                                width: 38px;
+                                right: 0px; 
+                                border-left: 1px solid #ebebeb; 
+                                text-align: center;
+                            }
+                            .list{
+                                margin: 0;
+                                border-radius: 0;
+                                width: 100%;
+                                li{
+                                    min-height: auto;
+                                    line-height: 35px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .coupon{ 
+            background: #f9f9f9;
+            border: 1px solid #ebebeb;
+            border-top: 0;
+            padding: 24px 40px;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            .form-inline{
+                .form-group{
+                    input{
+                        border-radius: 3px;
+                        color: #8e8d8d;
+                        font: 400 15px/31px $lato;
+                        padding: 0 20px;
+                        box-shadow: none;
+                        border: 1px solid #dddddd;
+                        background: #fff;
+                        width: 130px;
+                    }
+                }
+                button{
+                    font: 400 15px/30px $lato;
+                    color: #fff;
+                    background: $heding;
+                    box-shadow: none;
+                    border-radius: 3px;
+                    padding: 0 20px;
+                    min-width: 140px;
+                    margin-left: 20px;
+                    margin-top: -1px;
+                    cursor: pointer;
+                }
+            }
+            .get_btn {
+                background: #9ac339;
+                border: 0;
+                color: #fff;
+                line-height: 40px;
+                font-size: 16px;
+                width: 150px;
+                &:hover, &:focus{
+                    background: $heding;
+                }
+            }
+        }
+        .list-group{
+            float: right;
+            padding: 0;
+            li{
+                border-color: #ebebeb;
+                border-radius: 0;
+                font: 400 17px/1 $lato;
+                color: $heding;
+                padding: 20px 35px 20px 25px;
+                &.cart_total{
+                    background: #f9f9f9;
+                    font: 600 18px/1 $pop;
+                    color: $heding;
+                }
+                &.total{
+                    span{
+                        font-weight: 700;
+                        color: #363636;
+                    }
+                }
+                span{
+                    float: right;
+                    color: $pfont;
+                }
+                .get_btn{
+                    background: #9ac339;
+                    border: 0;
+                    color: #fff;
+                    line-height: 40px;
+                    font-size: 16px;
+                    width: 228px;
+                    float: right;
+                    &:hover, &:focus{
+                        background: $heding;
+                    }
+                }
+            }
+        }
+    }
+}
+/* End Checkout Table css
+================================= */ 

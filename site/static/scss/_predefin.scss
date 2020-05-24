@@ -1,0 +1,119 @@
+/*Prefix Styles*/ 
+body{
+	font-family: $lato; 
+    h1,h2,h3,h4,h5,h6{
+        margin: 0;
+    }
+	p{
+		font: 400 17px/26px $pop;
+        letter-spacing: 0.2px;
+		color: $pfont;
+        margin: 0; 
+	}
+    ul{
+        margin: 0;
+        padding: 0;
+        li{
+            list-style: none;
+        }
+    } 
+
+	/*Section Fix*/
+	section, header, footer{
+		&.row{            
+			margin: 0; 
+		}
+	} 
+    
+    #success{
+        display: none;
+    }
+    #error{
+        display: none;
+    }  
+    iframe{
+        border: none;
+    }
+    i{
+        &:before{
+            margin-left: 0px !important; 
+        }
+    }
+    /*Ancore*/
+    a,.btn,button{
+        outline: none;
+        @include transition;
+        &:before,&:after{
+            @include transition;
+        }
+        &:focus,&:hover{  
+            outline: none;
+            text-decoration: none;
+            @include transition; 
+        }
+    }
+} 
+.row.m0{
+    margin: 0px;
+}
+/* Main title css
+============================================================================================ */
+.center_tittle{
+    padding-top: 88px;
+    text-align: center;
+    h2{
+        font: 600 32px $pop;
+        color: $heding;
+    }
+    p{
+        color: $pfont;
+        padding-top: 10px;
+        font: 400 17px/28px $lato;
+        max-width: 980px;
+        margin: 0 auto;
+    }
+    h6{
+        font: 400 20px/26px $lato;
+        color: $pfont;
+        padding-bottom: 20px;
+        position: relative;
+        &:after{
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgb(154, 195, 57);
+            height: 2px;
+            width: 40px;
+            margin: 0 auto
+        }
+    }
+}
+.left_tittle{ 
+    padding-top: 90px;
+    h2{
+        font: 600 32px $pop;
+        color: $heding;
+        display: inline-block;
+        position: relative;
+        &:after{
+            content: "";
+            position: absolute;
+            top: 31px;
+            right: -58px;
+            background: rgb(154, 195, 57);
+            height: 2px;
+            width: 40px;
+        }
+    }
+    p{
+        color: $pfont;
+        padding-top: 10px;
+        font: 400 17px/28px $lato; 
+        letter-spacing: 0.2px;
+    }
+}
+/* Main title css
+============================================================================================ */
+ 

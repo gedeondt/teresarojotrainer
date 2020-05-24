@@ -1,0 +1,210 @@
+/* Fitness_course_area
+========================== */
+.fitness_course_area{
+    display: block;
+    overflow: hidden;
+    background: url("../images/fitness-course-bg.jpg") no-repeat fixed center 0;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding: 95px 0 80px;  
+    .fitness_course_row{
+        h2{
+            font: italic 40px/1 $kau;
+            color: #fff;
+            display: inline-block;
+            position: relative; 
+            &:after{
+                content: "";
+                position: absolute;
+                top: 31px;
+                right: -58px;
+                background: rgb(154, 195, 57);
+                height: 2px;
+                width: 40px;
+            }
+        }
+        p{
+            font: 400 italic 22px/32px $lato;
+            color: #fff;
+            max-width: 660px;
+            display: block;
+            padding: 22px 0 27px;
+        } 
+    }
+}   
+
+/* Health Coaching Area css
+========================== */
+.health_counter_area{
+    display: block;
+    overflow: hidden;
+    background: url("../images/counter-bg.jpg") no-repeat fixed center center;
+    background-size: cover;
+    position: relative; 
+    z-index: 1;
+    padding: 95px 0; 
+    &.counter_area_2{
+        background: url("../images/counter-bg-2.jpg") no-repeat fixed center center;
+        background-size: cover;
+    }
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: block;
+        background-color:  rgba(0, 0, 0, 0.60);
+        z-index: -1;
+    }
+    .counter_col{
+        text-align: center;
+        h1{
+            font: 900 70px/1 $lato;
+            color: #fff;
+            padding-bottom: 24px;
+            position: relative;
+            &:after{
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                background: rgb(154, 195, 57);
+                height: 2px;
+                width: 40px;
+            } 
+        }
+        h4{ 
+            font: 400 18px/25px $lato;
+            color: #fff;
+            padding-top: 25px;
+        }
+    }
+}  
+
+/* Juliet Health Coach css
+========================== */
+.juliet_health_coach{
+    background: url("../images/coaches-section-bg.jpg") no-repeat;
+    background-size: cover;
+    display: block;
+    overflow: hidden;
+    padding: 100px 0;
+    .juliet_health_coach_inner{
+        .juliet_health{
+            background: $bc;
+            padding: 53px;
+            h2{
+                color: #fff;
+                font: 600 32px/1 $pop;
+                margin-top: -3px;
+            }
+            h6{
+                font: 300 20px/28px $lato;
+                color: #fff;
+                padding-top: 15px;
+                letter-spacing: 0.50px;
+            }
+            p{
+                font: 400 17px/28px $lato;
+                color: #fff;
+                padding: 28px 0;
+                letter-spacing: 0.50px;
+            }
+        }
+    }
+}
+
+
+/*============= shipping_bar css ================*/
+.shipping_bar{
+    background: #f0f0f0;
+    padding: 42px 0px;
+}
+.shipping_item{
+    .media-body{
+        padding-left: 35px;
+        h3{
+            font: 600 20px $pop;
+            color: #242424;
+            padding-bottom: 5px;
+        }
+        p{
+            font: 400 16px/20px $lato;
+            color: #797979;
+        }
+    }
+}
+
+/*============== best_product_area css =============*/
+.best_product_area{
+    background: url("../images/shop/best-bg.jpg") no-repeat scroll center 0 /cover;
+    position: relative;
+    z-index: 1;
+    padding: 80px 0px;
+    &:before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #1c1c1c;
+        opacity: 0.50;
+        position: absolute;
+        z-index: -1;
+    }
+}
+.best_product_item{
+    text-align: center;
+    background: #f1f2f2;
+    height: 100%;
+    padding: 20px 0px 40px;
+    img{
+        display: inline-block;
+    }
+    .pdt{
+        display: block;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 700;
+        font-family: $lato;
+        color: #242424;
+    }
+    h3{
+        font-size: 25px;
+        line-height: 30px;
+        font-weight: 700;
+        color: #9ac339;
+        font-family: $lato;
+        margin: 10px 0px 18px;
+    }
+    .find_btn{
+        border-color: #9ac339;
+        color: #9ac339;
+        &:hover{
+            color: #fff;
+        }
+    }
+}
+.best_content{
+    padding-left: 40px;
+    h2{
+        font: 600 48px/50px $pop;
+        color: #fff;
+        letter-spacing: 0.30px;
+        margin-bottom: 20px;
+        span{
+            font-size: 40px;
+            color: #9ac339;
+        }
+    }
+    p{
+        font: 400 18px/26px $lato;
+        color: #fff;
+        margin-bottom: 50px;
+    }
+}

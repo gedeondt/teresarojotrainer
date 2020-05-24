@@ -1,0 +1,111 @@
+.frequently_asked_questions{
+    padding-bottom: 125px;
+    .search_answer{
+        padding-top: 50px;
+        input{
+            border: 1px solid rgb(235, 235, 235);
+            padding: 0 30px;
+            font: 500 16px/58px $pop;
+            color: #a3a3a3;
+            box-shadow: none;
+            border-right: 0;
+        }
+        .input-group-btn{
+            button{
+                background-color: transparent;
+                border-color: rgb(235, 235, 235);
+                padding-right: 30px;
+                border-left: 0;
+                cursor: pointer;
+                box-shadow: none !important;
+                i{
+                    color: #a3a3a3;
+                }
+            }
+        }
+    }
+    .frequently_questions_row{
+        padding-top: 15px;
+        .questions_ans{
+            .item{
+                padding-left: 28px;
+                padding-top: 50px;
+                a{
+                    font: 600 20px/27px $pop;
+                    color: $heding; 
+                    position: relative;
+                    &:after{
+                        content: "-";
+                        position: absolute;
+                        left: -28px;
+                        top: 4px;
+                        font: 700 20px/1 $pop;
+                        color: $heding;
+                    }
+                    &.collapsed{  
+                        &:after{
+                            opacity: 0;
+                        }
+                        &:before{
+                            content: "+";
+                            position: absolute;
+                            left: -28px;
+                            top: 4px;
+                            font: 700 20px/1 $pop;
+                            color: $heding;
+                        }
+                    }
+                }
+                
+                p{
+                    font: 600 17px/28px $lato;
+                    color: $pfont;
+                    letter-spacing: 0.5px;
+                    padding-right: 50px; 
+                    padding-top: 17px;
+                    margin-bottom: -5px;
+                }
+                .collapse{ 
+                } 
+            }
+        }
+    }
+}
+ 
+/* Start call_action_area css
+=======================================*/
+.call_action_area{
+    background: url("../images/home-5/promo-bg.jpg") no-repeat scroll center 0;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+    padding: 65px 0px 70px;
+    &:before{
+        content: "";
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 100%;
+        position: absolute;
+        background: #95be35;
+        opacity: 0.90;
+        z-index: -1;
+    }
+}
+.call_content{
+    text-align: center;
+    color: #fff;
+    h2{
+        font: 700 48px/60px $pop;
+    }
+    p{
+        font: 400 22px/32px $lato;
+        font-style: italic;
+        color: #fff;
+        max-width: 840px;
+        margin: 10px auto 38px;
+    }
+}
+/* End call_action_area css
+=======================================*/

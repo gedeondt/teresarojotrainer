@@ -1,0 +1,60 @@
+/* Main Slider Area css
+============================================================================================ */
+.main_slider_area{
+    position: relative;
+    ul{
+        li{
+            .slider_text_box{
+                .first_text{
+                    color: #fff; 
+                    font-family: $kau;
+                    overflow: hidden;
+                    span{
+                        color: $bc;
+                    }
+                    .juliet{
+                        color: #151515;
+                    }
+                }
+                .secand_text{
+                    color: #fff;
+                    font-family: $pop; 
+                    font-weight: 600 !important;
+                }
+                .third_text{
+                    color: #fff;
+                    font-family: $lato;
+                    letter-spacing: 0.30px !important;
+                } 
+                .slider_button{
+                    .slider_btn{
+                        font: 600 18px/52px $pop !important;
+                        color: #fff;
+                        background: $bc;
+                        text-align: center !important;
+                        border-radius: 30px;
+                        width: 225px;
+                        display: block;
+                        transition: all 300ms linear 0s !important;
+                        &:hover, &:focus{
+                            background: $heding;
+                        }
+                    }
+                }
+            }
+        }
+    }  
+    .tp-leftarrow, .tp-rightarrow{
+        z-index: 20 !important;
+    }
+}
+
+.main_slider_two{
+    margin-top: 110px;
+    .zeus.tparrows{
+        top: 51.5% !important;
+    }
+}
+/* End Main Slider Area css
+============================================================================================ */ 
+ 

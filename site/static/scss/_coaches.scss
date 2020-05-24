@@ -1,0 +1,284 @@
+/* Health Coach Area css
+================================= */
+.health_coach_area{
+    display: block;
+    overflow: hidden;
+    padding-bottom: 85px;
+    .health_coach_row{
+        padding-top: 55px;
+        .coach{
+            margin-bottom: 30px;
+            .coach_img{
+                position: relative;
+                overflow: hidden;
+                padding: 0px;
+                &:before {
+                    content: "";
+                    top: 0;
+                    left: 0;
+                    transform: translateY(0);
+                    z-index: 1;
+                    opacity: 0;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    background: #ffffff;
+                    transition: all 0.5s ease;
+                    -webkit-transition: all 0.5s ease;
+                    -ms-transition: all 0.5s ease;
+                    -moz-transition: all 0.5s ease;
+                    border: 0px;
+                }
+                &:after {
+                    width: 100%;
+                    height: 100%;
+                    content: "";
+                    background: #ffffff;
+                    opacity: 0;
+                    transition: all 0.5s ease;
+                    -webkit-transition: all 0.5s ease;
+                    -ms-transition: all 0.5s ease;
+                    -moz-transition: all 0.5s ease;
+                    position: absolute;
+                    z-index: 1;
+                    top: 0;
+                    left: 0;
+                }
+            }
+            &:hover, &:focus{
+                .coach_img{
+                    &:before {
+                        left: 50%;
+                        width: 0;
+                        opacity: 0.5;
+                    }
+                    &:after {
+                        top: 50%;
+                        height: 0;
+                        opacity: 0.5;
+                    }
+                }
+            }
+            img{
+                max-width: 100%;
+            }
+            a{
+                color: #fff;
+                display: block;  
+                position: relative;
+                background: #9ac339;
+                letter-spacing: 1.2px;
+                font: 600 20px/24px $pop;
+                border-top: 1px solid #fff; 
+                padding: 17px 20px 17px;
+                &:before{
+                    content: "";
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    height: 25px;
+                    position: absolute;
+                    border-left: 4px solid #75952b;
+                }
+            }
+        }
+    }
+} 
+/* End Health Coach Area css
+================================= */
+
+/* Our coaches Area css
+================================= */
+.our_coaches_area{
+    display: block;
+    overflow: hidden;
+    padding-bottom: 50px;
+    .our_coaches_row{
+        padding-top: 40px;
+        .coaches{
+            margin-bottom: 30px;
+            .coaches_img{
+                position: relative;
+                display: block;
+                overflow: hidden;
+                z-index: 2;
+                img{
+                    max-width: 100%;
+                }
+                &:after{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;   
+                    background: rgba(159, 202, 55, 0.902);
+                    z-index: 1;
+                    @include transition;
+                    opacity: 0;
+                }
+                .coaches_hover{
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 20px;
+                    text-align: center;
+                    z-index: 3;
+                    @include transition;
+                    opacity: 0;
+                    li{
+                        display: inline-block;
+                        padding-left: 25px;
+                        &:first-child{
+                            padding-left: 0;
+                        }
+                        a{
+                            color: #fff;
+                            font-size: 22px;
+                            &:hover, &:focus{
+                                color: $pfont;
+                            }
+                        }
+                    }
+                }
+            }
+            .coaches_content{
+                text-align: center;
+                padding: 15px 0;
+                a{
+                    font: 600 20px/26px $pop;
+                    color: $heding;
+                    &:hover, &:focus{
+                        color: $bc;
+                    }
+                }
+                h6{
+                    font: 400 16px/26px $lato;
+                    color: $pfont;
+                }
+            }
+            
+            &:hover, &:focus{
+                .coaches_img{ 
+                    &:after{
+                        opacity: 1;
+                    }
+                    .coaches_hover{
+                        bottom: 33px;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+.coaches_bg{
+    background: #f3f3f3;
+}
+/* End Our coaches Area css
+================================= */
+
+/* What We Do css
+================================= */
+.what_wedo_area{ 
+    display: block;
+    overflow: hidden;
+    .left_tittle{
+        padding-right: 215px;
+    }
+    .what_wedo_inner{
+        padding-top: 45px;
+        padding-bottom: 80px;
+        border-bottom: 1px solid #dbdbdb;
+        .what_wedo_carousel{
+            .items{
+                .img{
+                    position: relative;
+                    overflow: hidden;
+                    &:after{
+                        position: absolute;
+                        content: '';
+                        opacity: 0;
+                        background-color: rgba(0, 0, 0, .3);
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        transition: all .3s ease-out;
+                    }
+                    img{
+                        transition: all .3s ease-out;
+                    }
+                }
+                a{
+                    font: 600 18px/57px $pop;
+                    color: #fff;
+                    background: $bc;
+                    display: block;
+                    text-align: center;
+                    &:hover{
+                        color: $heding;
+                    }
+                }
+                &:hover{
+                    .img{
+                        &:after{
+                            opacity: 1;
+                        }
+                        img{
+                            transform: scale(1.05) translateZ(0);
+                        }
+                    }
+                }
+            }
+            .owl-nav{
+                position: absolute;
+                top: -118px;
+                right: 0;
+                .owl-prev,.owl-next{
+                    border: 2px solid #c2c2c2;
+                    line-height: 39px;
+                    width: 45px;
+                    text-align: center;
+                    display: inline-block;
+                    height: 45px;
+                    transition: all 0.4s linear;
+                    font-size: 22px;
+                    color: #c2c2c2;
+                    &:hover{
+                        background: #9ac339;
+                        border-color: #9ac339;
+                        color: #fff;
+                    }
+                }
+                .owl-next{
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+/* End What We Do css
+================================= */
+ 
+.what_we_area_two{
+    padding: 110px 0px 100px;
+    .left_tittle{
+        padding-top: 0px;
+    }
+    .what_wedo_inner{
+        border: 0px;
+        padding-bottom: 0px;
+        .what_wedo_carousel .items{
+            a{
+                background: #242424;
+            }
+            &:hover{
+                a{
+                    background: #9ac339;
+                    color: #fff;
+                }
+            }
+        } 
+    }
+}

@@ -1,0 +1,207 @@
+/* Gallery Col 3
+============================= */
+.grid_gallery_area{
+    padding: 90px 0 70px;
+    .grid_gallery_inner{
+        //* gallery_filter
+        .gallery_filter{
+            text-align: center;
+            padding-bottom: 57px;
+            li{
+                display: inline-block;
+                padding-left: 65px;
+                &:first-child{
+                    padding-left: 0;
+                }
+                a{
+                    font: 600 18px/30px $pop;
+                    color: $heding;
+                    position: relative;
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        width: 0%;
+                        right: 0;
+                        background: $bc;
+                        height: 1px;
+                        bottom: 0; 
+                    }
+                    &:hover, &:focus{
+                        color: $bc;
+                        &:after{
+                            width: 100%;
+                        }
+                    }
+                }
+                &.active a{ 
+                    color: $bc; 
+                    &:after{
+                        width: 100%;
+                    }
+                }
+            }
+        }//* End gallery_filter
+        .grid_gallery_item_inner{
+            .g-item{
+                padding: 0 15px;
+                width: calc(100% / 5);
+            }
+            .grid_gallery_item{
+                position: relative;
+                margin-bottom: 30px;
+                img{
+                    max-width: 100%;
+                }
+                .resort_g_hover{
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    text-align: center;
+                    background: rgba(159, 202, 55, 0.902);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    @include transition;
+                    opacity: 0;
+                    a i {
+                        font-size: 17px;
+                        text-align: center;
+                        border-radius: 50%;
+                        background-color: rgb(40, 40, 40);
+                        width: 54px;
+                        height: 54px;
+                        line-height: 54px;
+                        color: #fff;
+                        display: block;
+                        margin-top: 30px;
+                        transition: all 400ms linear 0s;
+                    }
+                }
+                &:hover, &:focus{
+                    .resort_g_hover{
+                        opacity: 1;
+                        a i{
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .left_tittle{
+        padding-top: 0px;
+        margin-bottom: 50px;
+    }
+} 
+/* End Gallery Col 3
+============================= */
+
+/* Gallery With text
+============================= */
+.gallery_with_text{
+    padding-bottom: 50px;
+    .grid_gallery_inner .grid_gallery_item_inner{
+        .with_text{ 
+            margin-bottom: 45px;
+            .grid_gallery_item{
+                margin-bottom: 0;
+            } 
+            .w_text{
+                font: 600 18px/1 $pop;
+                color: $heding;
+                display: block;
+                text-align: center;
+                padding-top: 28px; 
+                &:hover, &:focus{
+                    color: $bc;
+                }
+            }
+        }
+    }
+}
+/* End Gallery With text
+============================= */
+
+
+/* instragram_area
+============================= */
+.instragram_area{
+    display: flex;
+    background: #181818;
+    .instragram_left{
+        width: calc(50% - 481px);
+        float: left;
+        flex: 1;
+        vertical-align: middle;
+        align-self: center;
+        .content{
+            max-width: 360px;
+            margin-left: auto;
+            margin-right: 0;
+            position: relative;
+            padding-bottom: 17px;
+            &:before{
+                content: "";
+                width: 40px;
+                height: 2px;
+                background: #9ac339;
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+            h2{
+                font-size: 32px;
+                line-height: 36px;
+                color: #fff;
+            }
+            p{
+                font-size: 20px;
+                line-height: 26px;
+                color: #797979;
+            }
+        }
+    }
+    .instragram_right{
+        width: calc(50% + 481px);
+        float: right;
+        .intragram-gallary{
+            .item{
+                float: left;
+                width: calc(100% / 3);
+                position: relative;
+                transition: all .3s ease-out;
+                overflow: hidden;
+                display: inline-block;
+                &:after{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.3);
+                    opacity: 0;
+                    transition: all .3s ease-out;
+                }
+                img{
+                    max-width: 100%;
+                    transition: all .3s ease-out;
+                }
+                &:hover{
+                    img{
+                        transform: scale(1.05) translateZ(0);
+                    }
+                    &:after{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+/* instragram_area
+============================= */

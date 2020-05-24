@@ -1,0 +1,97 @@
+.customers_says{
+    display: block;
+    overflow: hidden;
+    background: #f0f0f0;
+    padding-bottom: 120px;
+    .customers_says_row{
+        padding-top: 40px;
+        .says_carousel, .says_not_carousel{ 
+            .item .media{
+                cursor: e-resize;
+                margin-bottom: 0;
+            }
+            .media {
+                border-radius: 3px;
+                background-color: rgb(255, 255, 255);
+                box-shadow: 0px 3px 30px 0px rgba(0, 0, 0, 0.05);
+                padding: 37px 30px;
+                margin-bottom: 50px;
+                .client_img{
+                    position: relative;
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        bottom: -20px;
+                        left: 0;
+                        right: 0;
+                        margin: 0 auto;
+                        width: 24px;
+                        height: 2px;
+                        background: rgb(221, 221, 221);
+                    }
+
+                }
+                &:hover, &:focus{
+                    .client_img:after{
+                        background: $bc;
+                    }
+                }
+                .media-body{
+                    margin-left: 30px;
+                    a{
+                        font: 600 22px/1 $pop;
+                        color: $heding;
+                        &:hover, &:focus{
+                            color: $bc;
+                        }
+                    }
+                    h4{
+                        font: 400 italic 18px/28px $lato;
+                        color: $bc;
+                        padding: 8px 0 12px;
+                    }
+                    p{
+                        font: 400 17px/26px $lato;
+                        color: $pfont;
+                        letter-spacing: 1.1px;
+                    }
+                }
+            } 
+        }
+    }
+}  
+
+/* Start testimonial_area_two css
+==============================================*/
+.testimonial_area_two{
+    background: #efefef;
+    padding: 100px 0px;
+    .about_content{
+        padding-right: 100px;
+        p.bold{
+            padding: 20px 0px 10px;
+        }
+    }
+    .testimonial_gallery{
+        .item{
+            width: 49%;
+            float: left;
+            img{
+                max-width: 100%;
+            }
+            h5{
+                font: 500 20px/30px $pop;
+                color: #242424;
+                text-align: center;
+                margin-top: 25px;
+            }
+            & + .item{
+                margin-left: 2%;
+            }
+        }
+    }
+}
+
+.testimonial_bg_white{
+    background: #fff;
+}

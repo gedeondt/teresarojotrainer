@@ -1,51 +1,59 @@
-<footer class="bg-black ph3 pv4 white">
-
-	<div class="mw7 center pt3">
-
-		<div class="measure-narrow center mb4">
-
-			<img src="/img/logo.svg" alt="Kaldi logo" class="db w4 center mb4 br0">
-			<p class="f3 lh-title light-gray b tc mb2">Newsletter subscribe</p>
-			<p>Get awesome news from us in your inbox every two weeks. Be the first to learn about new products.</p>
-
-			{{ partial "newsletter-form" . }}
-
+<footer class="footer_area">
+	<div class="container">
+		<div class="row m-0 footer_subscriber">
+			<div class="col-lg-4 find_out_text p-0"><h2>Find out latest news &amp; offers</h2></div>  
+			<div class="form-group col-lg-8 p-0">
+				<input type="email" class="form-control" name="email" placeholder="Email Address*">
+				<button class="find_btn btn" type="submit">Submit Now</button> 
+			</div>  
 		</div>
-
-		<div class="flex-ns justify-between">
-
-			<div>
-				<h3 class="f4 b lh-title mb1 primary">Kaldi</h3>
-				<ul class="mb3">
-					<li><a href="/" class="link">Home</a></li>
-					<li><a href="/products" class="link">Our products</a></li>
-					<li><a href="/values" class="link">About</a></li>
-					<li><a href="/post" class="link">Blog</a></li>
-					<li><a href="/contact" class="link">Contact</a></li>
+		<div class="row footer_row">
+			<div class="col-lg-3 col-md-6 fooer_logo"> 
+				<a href="index.html"><img src="images/logo.png" alt=""></a>
+				<p>Lorem ipsum dolor sit amet, consec-tet ur adipiscing elit, sed do iusmod tempor incididunt ut labore et.</p>
+				<ul class="social_icon">
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+					<li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+					<li><a href="#"><i class="fa fa-skype"></i></a></li>
 				</ul>
 			</div>
-
-			<div>
-				<h3 class="f4 b lh-title mb1 primary">Find out more</h3>
-				<ul class="mb3">
-					<li><a href="/post/jamaica-blue/" class="link">Latest offers</a></li>
-					<li><a href="/contact" class="link">Schedule and appointment</a></li>
+			<div class="col-lg-3 col-md-6 quick quick_strat">
+				<h4>Quick Links</h4>
+				<ul class="quick_links">
+					<li><a href="#">-  About Us</a></li>
+					<li><a href="#">-  News &amp; Tips</a></li>
+					<li><a href="#">-  Events</a></li>
+					<li><a href="#">-  Coachers</a></li>
+					<li><a href="#">-  Healthy Food</a></li>
 				</ul>
 			</div>
-
-			<div>
-				<h3 class="f4 b lh-title mb2 primary">Social media</h3>
-				<ul class="mhn2">
-					{{ partial "social-icon" (dict "link" "#" "svg" "icons-facebook") }}
-					{{ partial "social-icon" (dict "link" "#" "svg" "icons-twitter") }}
-					{{ partial "social-icon" (dict "link" "#" "svg" "icons-instagram") }}
-					{{ partial "social-icon" (dict "link" "#" "svg" "icons-vimeo") }}
+			<div class="col-lg-3 col-md-6 quick">
+				<h4>Our Services</h4>
+				<ul class="quick_links">
+					<li><a href="#">-  Balance Body &amp; Mind</a></li> 
+					<li><a href="#">-  Nutrition Plan</a></li> 
+					<li><a href="#">-  Fitness &amp; Performance</a></li> 
+					<li><a href="#">-  Weight Loss Program</a></li> 
+					<li><a href="#">-  Cardio Excercise</a></li> 
 				</ul>
 			</div>
-
+			<div class="col-lg-3 col-md-6 quick">
+				<h4>Get in Touch</h4>
+				<address>
+					<span><i class="fa fa-map-marker"></i>54B, Tailstoi Town 5238 MT, La city, IA 522364</span> 
+					<a href="#"><i class="fa fa-phone"></i>+ 01865 524 8503 </a>
+					<a href="#"><i class="fa fa-envelope-o"></i>info@fitnesscoach.com</a>
+				</address>
+			</div>
 		</div>
 	</div>
-
+	<div class="copy_right">
+	  <div class="container">
+		   <h6>Copyright © <a href="#">fitnesscoach</a> 2017. All rights reserved. </h6>
+			<h6>Created by: <a href="#">DesignArc</a></h6>
+	  </div>
+	</div>
 </footer>
 
 {{ partial "svg" . }}
