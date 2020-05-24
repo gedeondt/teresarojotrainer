@@ -1,0 +1,46 @@
+{{ define "main" }}
+
+<div class="banner_area">
+  <h2>Blog</h2>
+  <a href="#">Home  &gt; Blog  <span>&gt; Blog</span></a>
+</div>
+
+
+<section class="blog_area">
+  <div class="container">
+      <div class="row blog_inner">
+         <!-- Blog Left Sidebar -->
+         <div class="blog_without">
+              {{ range .Pages.ByPublishDate.Reverse }}
+              <!-- Blog items -->
+              <div class="blog_items"> 
+                  <a href="{{.Permalink}}" class="blog_img"><img src="images/blog/blog-without-sidebar-1.jpg" alt=""></a>
+                  <div class="breadcrumb_date">
+                      <h6>02 Sep. 2017</h6> 
+                      <ol class="breadcrumb"> 
+                          <li class="breadcrumb-item">By : <a href="">Admin</a></li>
+                          <li class="breadcrumb-item"><a href="#">fitness, wellness</a></li>
+                          <li class="breadcrumb-item"><a href="#">Comments: 8</a></li>
+                      </ol>  
+                  </div>
+                  <a href="{{.Permalink}}" class="blog_tittle">{{ .Title }}</a>
+                  <p>{{ .Description }}</p> 
+                  <a href="{{.Permalink}}" class="find_btn">Read more</a>
+              </div>
+
+              {{ end }}
+              
+              <!-- Pagination -->
+              <div class="col next_pages">
+                  <ul class="pagination justify-content-center">
+                      <li><a href="#" class="active">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                  </ul>
+              </div>
+         </div>  
+      </div>
+  </div>
+</section>
+
+{{end}}
