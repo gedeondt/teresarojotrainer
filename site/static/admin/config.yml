@@ -26,7 +26,6 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Por qué - Explicación" , name: porqueExplicacion, widget: string}
           - {label: "Motivos", name: porqueMotivos, widget: object, fields: [
               {label: "Titulo", name: "titulo", widget: string},
-              {label: "Imagen", name: "imagen", widget: "image"}
               ]
             }
       - file: "site/content/contact/_index.md"
