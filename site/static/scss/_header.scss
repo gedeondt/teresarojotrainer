@@ -13,11 +13,11 @@
             padding: 10px 0;
             border-bottom: 1px solid rgba(255, 255, 255, 0.149);
             a{
-                color: #beeb53;
+                color: #06ffcf;
                 padding-right: 30px;
                 font: 400 15px/1 $pop;
                 i{
-                    color: #9ac339;
+                    color: #06ffcf;
                     font-size: 15px;
                     padding-right: 10px;
                 }
@@ -34,7 +34,7 @@
                 display: inline-block;
                 a{ 
                     padding: 0;
-                    color: #9ac339;
+                    color: #06ffcf;
                     font-size: 16px;
                     padding-left: 18px;
                     i{
@@ -113,7 +113,7 @@
                     position: absolute;
                     bottom: 25px;
                     left: 0;
-                    background: rgb(154, 195, 57);
+                    background: #06ffcf;
                     height: 1px;
                     width: 0px; 
                 }
@@ -344,7 +344,7 @@
             i{
                 font-size: 25px;
                 line-height: 30px;
-                color: #9ac339;
+                color: #06ffcf;
             }
             .media-body{
                 font: 600 15px/22px $pop;
@@ -365,7 +365,7 @@
             }
             .get_app{
                 font: 600 16px/24px $pop;
-                background: #9ac339;
+                background: #06ffcf;
                 padding: 10px 30px;
                 display: inline-block;
                 color: #fff;
@@ -414,7 +414,7 @@
                             display: inline-block;
                         }
                         &:hover{
-                            color: #9ac339;
+                            color: #06ffcf;
                         }
                     }
                 }
@@ -429,7 +429,7 @@
                 line-height: 60px;
                 padding-left: 20px;
                 &:hover{
-                    color: #9ac339;
+                    color: #06ffcf;
                 }
             }
         }

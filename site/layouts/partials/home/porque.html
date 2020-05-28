@@ -1,0 +1,20 @@
+<!--================Health coach Area =================-->
+<section class="health_coach_area">
+    <div class="container">
+       <div class="center_tittle">
+           <h2>{{ .Params.porque }}</h2>
+           <p>{{ .Params.porqueExplicacion }}</p>
+       </div>
+        <div class="row health_coach_row">
+            {{ range .Params.porqueMotivos }}
+            <div class="col-lg-4 col-md-6 col-sm-6 coach">
+               <a href="nutrition-plan.html" class="coach_img"> 
+                    <img src="{{ .imagen }}" alt=""> 
+               </a>
+                <a href="nutrition-plan.html">{{ .titulo }}</a>
+            </div> 
+            {{ end }}
+        </div>
+    </div>
+</section>
+<!--================End Health coach =================-->
