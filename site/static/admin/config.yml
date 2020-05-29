@@ -43,7 +43,14 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Sobre Tere - Subtítulo" , name: sobreTereSubtitulo, widget: string}
           - {label: "Sobre Tere - Descripción" , name: sobreTereDescripción, widget: string}
           - {label: "Sobre Tere - Botón" , name: sobreTereBoton, widget: string}
-
+          - {label: "Testimonios - Título" , name: testimoniosTitulo, widget: string}
+          - {label: "Testimonios - Subtítulo" , name: testimoniosSubtitulo, widget: string}
+          - {label: "Testimonios", name: testimoniosListado, widget: list, fields: [
+              {label: "Nombre", name: "nombre", widget: string},
+              {label: "Titular", name: "titular", widget: string},
+              {label: "Descripción", name: "descripcion", widget: string}
+              ]
+            }
       - file: "site/content/contact/_index.md"
         label: "Contact Page"
         name: "contact"
