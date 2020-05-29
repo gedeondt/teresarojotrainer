@@ -6,13 +6,13 @@
         <p>{{ .Params.serviciosExplicacion }}</p>
        </div>
         <div class="row service_row">
-            {{ range .Params.serviciosMotivos }}
+            {{ range .Params.serviciosListado }}
             <div class="col-lg-4 col-md-6 body_mind">
                 <div class="media"> 
                     <i class="flaticon-running"></i>
                     <div class="media-body">
-                        <h4>{ .titulo }</h4>
-                        <p>{ .explicacion }</p>
+                        <h4>{{ .titulo }}</h4>
+                        <p>{{ .explicacion }}</p>
                         <a href="#">Read more</a>
                     </div>
                 </div>

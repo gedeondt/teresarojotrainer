@@ -36,7 +36,14 @@ collections: # A list of collections the CMS should be able to edit
               {label: "Explicacion", name: "explicacion", widget: string}
               ]
             }
-            
+          - {label: "Cintilla - Título" , name: cintillaTitulo, widget: string}
+          - {label: "Cintilla - Descripción" , name: cintillaDescripcion, widget: string}
+          - {label: "Cintilla - Botón" , name: cintillaBotón, widget: string}
+          - {label: "Sobre Tere - Título" , name: sobreTereTitulo, widget: string}
+          - {label: "Sobre Tere - Subtítulo" , name: sobreTereSubtitulo, widget: string}
+          - {label: "Sobre Tere - Descripción" , name: sobreTereDescripción, widget: string}
+          - {label: "Sobre Tere - Botón" , name: sobreTereBoton, widget: string}
+
       - file: "site/content/contact/_index.md"
         label: "Contact Page"
         name: "contact"
