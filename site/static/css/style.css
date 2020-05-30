@@ -130,7 +130,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   left: 0;
   right: 0;
   bottom: 0;
-  background: #9ac339;
+  background: #06ffcf;
   height: 2px;
   width: 40px;
   margin: 0 auto;
@@ -150,7 +150,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   position: absolute;
   top: 31px;
   right: -58px;
-  background: #9ac339;
+  background: #06ffcf;
   height: 2px;
   width: 40px;
 }
@@ -1051,7 +1051,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   position: absolute;
   top: 31px;
   right: -58px;
-  background: #9ac339;
+  background: #06ffcf;
   height: 2px;
   width: 40px;
 }
@@ -1105,7 +1105,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   left: 0;
   right: 0;
   margin: 0 auto;
-  background: #9ac339;
+  background: #06ffcf;
   height: 2px;
   width: 40px;
 }
@@ -1300,7 +1300,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   position: absolute;
   top: 31px;
   right: -58px;
-  background: #9ac339;
+  background: #06ffcf;
   height: 2px;
   width: 40px;
 }
@@ -1377,7 +1377,7 @@ p.bold {
   position: absolute;
   top: 12px;
   right: -60px;
-  background: #9ac339;
+  background: #06ffcf;
   height: 2px;
   width: 40px;
 }
@@ -3240,7 +3240,7 @@ p.bold {
   margin: -30px 15px 0;
 }
 .blog_area .blog_inner .next_pages .pagination li a {
-  border: 2px solid #9ac339;
+  border: 2px solid #06ffcf;
   font: 700 16px/39px "Poppins", sans-serif;
   color: #242424;
   width: 41px;
@@ -4563,7 +4563,7 @@ p.bold {
   position: absolute;
   left: 0;
   bottom: 0;
-  background: #9ac339;
+  background: #06ffcf;
   height: 2px;
   width: 40px;
 }
