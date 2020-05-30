@@ -5,6 +5,8 @@ porqueExplicacion: Por esto y lo otro y lo de más allá. asdfas dfañsdlkfasnf
 porqueMotivos:
   - titulo: Motivo 1
     imagen: img/blog-index.jpg
+  - titulo: motivo 4
+    imagen: img/blog-index.jpg
 servicios: Servicios que ofrezco
 serviciosExplicacion: Ofrezco un montón de servicios super chilis, que esto lo otro y lo de más allá.
 serviciosListado:
@@ -20,4 +22,10 @@ sobreTereTitulo: Hola, soy Tere
 sobreTereSubtitulo: Soy tu entrenadora peronsal, espcializada en esto y lo otro para cuidarte
 sobreTereDescripción: aquí un poco más de verborrea sobre tere y esto y lo otro...
 sobreTereBoton: Llámame
+testimoniosTitulo: Mis clientes
+testimoniosSubtitulo: Te cuentan todas estas cosas
+testimoniosListado:
+  - nombre: Gede
+    titular: Me rompí
+    descripcion: añlskdfalk sdfjañlksfj añslkdfj
 ---
