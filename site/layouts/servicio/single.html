@@ -1,0 +1,137 @@
+{{ define "main" }}
+
+        <!--================Banner Area =================-->  
+        <div class="banner_area">
+          <h2>{{ .Title }}</h2>
+          <a href="#">Home  > Servicios  <span>> {{ .Title }}</span></a>
+      </div>
+      <!--================End Banner Area =================-->  
+      
+      <!--================Blog tow column Area =================--> 
+      <section class="nutrition_plan_area">
+        <div class="container">
+            <div class="row nutrition_plan_inner nutrition_plan_main">
+                <div class="col-lg-9 nutrition_right_sidebar float-md-right">
+                    <div class="row plan_main_row">
+                        <div class="col-12 program_details">
+                            <h2>El servicio</h2>
+                            {{ .Content }}
+                        </div> 
+                        <div class="col benefit_nutritions_img"><img src="images/nutrition-4.jpg" alt=""></div>
+                        <div class="col benefit_nutritions_content">
+                            <h3>Benefit of Nutritions</h3>
+                            <p>Expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,</p>
+                            <ul class="benefit_list">
+                                <li>Those who do not know how to pursue</li>
+                                <li>Pleasure rationally encounter</li>
+                                <li>Consequences that are extremely painful.</li>
+                                <li>Nor again is there anyone who loves or pursues</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 nutrition_strategies">
+                           <div class="row media_row m-0">
+                                <div class="media b_g col-md-6">
+                                   <i class="flaticon-nutrition"></i>
+                                    <div class="media-left">
+                                        <h4>Nutrition Strategies</h4>
+                                        <p>Leverage agile frameworks to provide a robust synopsis for high level over-views. Iterative approaches.</p>
+                                    </div>
+                                </div>
+                                <div class="media col-md-6">
+                                   <i class="flaticon-users"></i>
+                                    <div class="media-left">
+                                        <h4>One to One Training</h4>
+                                        <p>Leverage agile frameworks to provide a robust synopsis for high level over-views. Iterative approaches.</p>
+                                    </div>
+                                </div>
+                                <div class="media col-md-6"> 
+                                   <i class="flaticon-chat"></i>
+                                    <div class="media-left">
+                                        <h4>Regular Consultations</h4>
+                                        <p>Leverage agile frameworks to provide a robust synopsis for high level over-views. Iterative approaches.</p>
+                                    </div>
+                                </div>
+                                <div class="media b_g col-md-6"> 
+                                   <i class="flaticon-video-player"></i>
+                                    <div class="media-left">
+                                        <h4>Video Training Pack</h4>
+                                        <p>Leverage agile frameworks to provide a robust synopsis for high level over-views. Iterative approaches.</p>
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="col p-0">
+                            <div class="row choose_qustion">
+                                <div class="col-lg choose_area">
+                                    <h3>Why Choose Us</h3> 
+                                    <div id="questions_aq" class="questions_ans" data-children=".item">
+                                        <div class="item">
+                                            <a data-toggle="collapse" data-parent="#questions_aq" href="#accordion1" class="collapsed">Bring to the table win-win survival strategies.</a>
+                                            <div id="accordion1" class="collapse" role="tabpanel">
+                                                <p>Expound the actual teachings of the great explor-er of the truth, the master-builder of human hap-piness. No one rejects, dislikes, or avoids.</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <a data-toggle="collapse" data-parent="#questions_aq" href="#accordion2" class="collapsed">To ensure proactive domination.</a>
+                                            <div id="accordion2" class="collapse" role="tabpanel">
+                                                <p>Expound the actual teachings of the great explor-er of the truth, the master-builder of human hap-piness. No one rejects, dislikes, or avoids.</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <a data-toggle="collapse" data-parent="#questions_aq" href="#accordion3" class="collapsed">Capitalize on low hanging fruit to identify.</a>
+                                            <div id="accordion3" class="collapse show" role="tabpanel">
+                                                <p>Expound the actual teachings of the great explor-er of the truth, the master-builder of human hap-piness. No one rejects, dislikes, or avoids.</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <a data-toggle="collapse" data-parent="#questions_aq" href="#accordion4" class="collapsed">Activity to beta test. Override the digital divide.</a>
+                                            <div id="accordion4" class="collapse" role="tabpanel">
+                                                <p>Expound the actual teachings of the great explor-er of the truth, the master-builder of human hap-piness. No one rejects, dislikes, or avoids.</p>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="col-lg request">
+                                    <h3>Request Free Consultation</h3>
+                                    <form class="consultation_from">
+                                        <div class="form-group"> 
+                                            <input type="text" class="form-control" placeholder="Your Name"> 
+                                        </div>
+                                        <div class="form-group"> 
+                                            <input type="email" class="form-control" placeholder="Email">
+                                        </div>
+                                        <div class="form-group">  
+                                            <select class="product_select form-control" style="display: none;">
+                                                <option data-display="Select Service">Select Service</option>
+                                                <option value="">Balance Body Mind</option>
+                                                <option value="">Nutrition Plan</option> 
+                                                <option value="">Fitness &amp; Performance</option>
+                                                <option value="">Routein Program</option>
+                                                <option value="">Weight Loss Program</option>
+                                                <option value="">Cardio Exercise</option> 
+                                            </select><div class="nice-select product_select form-control" tabindex="0"><span class="current">Select Service</span><ul class="list"><li data-value="Select Service" data-display="Select Service" class="option selected">Select Service</li><li data-value="" class="option">Balance Body Mind</li><li data-value="" class="option">Nutrition Plan</li><li data-value="" class="option">Fitness &amp; Performance</li><li data-value="" class="option">Routein Program</li><li data-value="" class="option">Weight Loss Program</li><li data-value="" class="option">Cardio Exercise</li></ul></div>
+                                        </div>
+                                        <div class="form-group message"> 
+                                            <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+                                            <button type="submit" class="send_btn">Send</button>
+                                        </div>  
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 nutrition_left_sidebar float-md-right">
+                    <ul class="plan_menu">
+                        {{ range first 10 (where .Site.RegularPages "Type" "servicio") }}
+                        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                        {{ end }}
+                    </ul>
+                    <a href="#" class="contact_info p_t"><i class="fa fa-phone"></i>676 53 79 96</a>
+                    <a href="#" class="contact_info"><i class="fa fa-paper-plane"></i>tere@teresarojo.com</a>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!--================End Blog tow column Area =================--> 
+{{ end }}
