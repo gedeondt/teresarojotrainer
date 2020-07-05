@@ -30,34 +30,15 @@
                         </div>
                         <div class="col-12 nutrition_strategies">
                            <div class="row media_row m-0">
+                            {{ range .Params.claves }}
                                 <div class="media b_g col-md-6">
-                                   <i class="flaticon-nutrition"></i>
+                                   <i class="flaticon-{{ .icono }}"></i>
                                     <div class="media-left">
-                                        <h4>Nutrition Strategies</h4>
+                                        <h4>{{ .titulo }}</h4>
                                         <p>Leverage agile frameworks to provide a robust synopsis for high level over-views. Iterative approaches.</p>
                                     </div>
                                 </div>
-                                <div class="media col-md-6">
-                                   <i class="flaticon-users"></i>
-                                    <div class="media-left">
-                                        <h4>One to One Training</h4>
-                                        <p>Leverage agile frameworks to provide a robust synopsis for high level over-views. Iterative approaches.</p>
-                                    </div>
-                                </div>
-                                <div class="media col-md-6"> 
-                                   <i class="flaticon-chat"></i>
-                                    <div class="media-left">
-                                        <h4>Regular Consultations</h4>
-                                        <p>Leverage agile frameworks to provide a robust synopsis for high level over-views. Iterative approaches.</p>
-                                    </div>
-                                </div>
-                                <div class="media b_g col-md-6"> 
-                                   <i class="flaticon-video-player"></i>
-                                    <div class="media-left">
-                                        <h4>Video Training Pack</h4>
-                                        <p>Leverage agile frameworks to provide a robust synopsis for high level over-views. Iterative approaches.</p>
-                                    </div>
-                                </div>
+                            {{ end }}
                            </div>
                         </div>
                         <div class="col p-0">
