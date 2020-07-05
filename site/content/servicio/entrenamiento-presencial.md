@@ -1,5 +1,5 @@
 ---
-nombre: Entrenamiento presencial
+title: Entrenamiento presencial
 descripcion: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae
   hendrerit diam, non condimentum nunc. Morbi pretium finibus massa dictum

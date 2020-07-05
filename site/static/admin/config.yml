@@ -25,7 +25,7 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     identifier_field: nombre
     fields: # The fields each document in this collection have
-      - {label: "Nombre", name: "nombre", widget: "string"}
+      - {label: "Nombre", name: "title", widget: "string"}
       - {label: "Descripcion", name: "descripcion", widget: "markdown"}
       - {label: "Imagen", name: "imagen", widget: "image", required: false}
   - name: "pages"

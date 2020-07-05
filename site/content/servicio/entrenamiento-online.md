@@ -1,5 +1,5 @@
 ---
-nombre: Entrenamiento online
+title: Entrenamiento online
 descripcion: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae
   hendrerit diam, non condimentum nunc. Morbi pretium finibus massa dictum
