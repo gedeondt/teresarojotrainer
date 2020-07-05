@@ -33,7 +33,7 @@
 							<a class="nav-link dropdown-toggle active" href="" role="button" data-toggle="dropdown" aria-expanded="false">Home</a>
 						</li>
 						<li class="dropdown">
-							<a class="nav-link dropdown-toggle active" href="" role="button" data-toggle="dropdown" aria-expanded="false">Servicios</a>
+							<a class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown" aria-expanded="false">Servicios</a>
 							<ul class="dropdown-menu services_d">
 								{{ range first 10 (where .Site.RegularPages "Type" "servicio") }}
 								<li><a href="{{ .Permalink }}">{{ .Title }}</a></li> 

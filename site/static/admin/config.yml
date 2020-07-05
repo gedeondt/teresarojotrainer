@@ -26,8 +26,8 @@ collections: # A list of collections the CMS should be able to edit
     identifier_field: nombre
     fields: # The fields each document in this collection have
       - {label: "Nombre", name: "title", widget: "string"}
-      - {label: "Descripcion", name: "descripcion", widget: "markdown"}
       - {label: "Imagen", name: "imagen", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
     editor:
       preview: false
