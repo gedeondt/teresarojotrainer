@@ -31,6 +31,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Claves", name: claves, widget: list, fields: [
               {label: "Titulo", name: "titulo", widget: string},
+              {label: "Descripcion", name: "descripcion", widget: string},
               {label: "Icono", name: "icono", widget: select, options: ["gym","gym-1", "gym-2", "milk-products","users","chat","handshake","maps-and-flags","note","nutrition","cardiogram","runner","waist","running"]}
               ]
         }
