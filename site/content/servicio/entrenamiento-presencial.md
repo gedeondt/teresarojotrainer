@@ -14,6 +14,11 @@ imagen: img/blog-index.jpg
 claves:
   - titulo: En tu domicilio
     icono: maps-and-flags
+    descripcion: Sin desplazamientos y adaptado a tus horarios
+  - icono: nutrition
+    titulo: Asesoramiento nutricional
+    descripcion: Porque el deporte y la nutrición son las dos caras de una misma
+      moneda... tu salud.
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum sapien in turpis porttitor, eu commodo nisi lacinia. In congue, est in pharetra elementum, nunc dui placerat tellus, ut egestas nisi nibh et ex. Praesent tincidunt mi aliquam, dignissim erat efficitur, malesuada lacus. Donec pellentesque lacus quis nulla viverra tincidunt. Duis tempor cursus risus sodales pellentesque. Quisque finibus tortor eu nunc suscipit luctus. Donec in rhoncus lorem, eu euismod justo. Aenean in accumsan mauris, nec vehicula ligula. Duis feugiat sodales tellus eget sodales. Quisque ullamcorper efficitur fermentum.
 
