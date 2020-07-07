@@ -15,7 +15,7 @@ claves:
   - titulo: Valoración inicial
     descripcion: Valoración de tu punto de partida a través de un cuestionario y
       análisis de tu calidad de movimiento.
-    icono: note
+    icono: gym-2
   - titulo: Individualizado
     descripcion: Entrenamiento totalmente adaptado a tus objetivos y necesidades.
     icono: users
