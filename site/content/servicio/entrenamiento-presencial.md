@@ -13,9 +13,9 @@ description: El plan más eficaz
 imagen: img/blog-index.jpg
 claves:
   - titulo: Valoración inicial
-    icono: gym-1
+    icono: gym-2
     descripcion: Entrevista inicial en la que analizaré tu punto de partida
-  - icono: gym
+  - icono: users
     titulo: Individualizado
     descripcion: Servicio completamente adaptado a tus objetivos y necesidades
   - titulo: En tu domicilio
