@@ -12,9 +12,18 @@ descripcion: >-
 description: El plan más eficaz
 imagen: img/blog-index.jpg
 claves:
+  - titulo: Valoración inicial
+    icono: gym-1
+    descripcion: Entrevista inicial en la que analizaré tu punto de partida
+  - icono: gym
+    titulo: Individualizado
+    descripcion: Servicio completamente adaptado a tus objetivos y necesidades
   - titulo: En tu domicilio
     icono: maps-and-flags
     descripcion: Sin desplazamientos y adaptado a tus horarios
+  - titulo: "Contacto cercano y contínuo "
+    icono: chat
+    descripcion: Comunicación continua a través de WhatsApp
   - icono: nutrition
     titulo: Asesoramiento nutricional
     descripcion: Porque el deporte y la nutrición son las dos caras de una misma
