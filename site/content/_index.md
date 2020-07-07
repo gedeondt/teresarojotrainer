@@ -1,7 +1,7 @@
 ---
 porque: TE AYUDARÉ A CUMPLIR TUS OBJETIVOS
 porqueExplicacion: Entrenamiento totalmente adaptado a tus objetivos y
-  necesidades, para conseguir cumplir con todas tus metas.
+  necesidades, para conseguir cumplir todas tus metas
 porqueMotivos:
   - titulo: Entrenamiento de fuerza
     imagen: img/blog-index.jpg
